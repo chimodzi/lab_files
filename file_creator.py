@@ -30,7 +30,7 @@ def json_data(data, used_directory=True):
         with open('data.json', 'w+') as user_data:
             data['last_lesson'] += 1
             json.dump(data, user_data)
-        return data['user_name'], data['last_lesson'] + 1, (first_task, last_task), data['directory']
+        return data['user_name'], data['last_lesson'], (first_task, last_task), data['directory']
 
 
 def new_data(data):
